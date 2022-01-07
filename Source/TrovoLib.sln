@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrovoLib.Api", "TrovoLib.Api\TrovoLib.Api.csproj", "{75CBC509-9B6B-474E-979D-4A4CCA078323}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75CBC509-9B6B-474E-979D-4A4CCA078323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75CBC509-9B6B-474E-979D-4A4CCA078323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75CBC509-9B6B-474E-979D-4A4CCA078323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75CBC509-9B6B-474E-979D-4A4CCA078323}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D79F0888-9C9E-4C8D-B33F-36FDEB6664BE}
+	EndGlobalSection
+EndGlobal
