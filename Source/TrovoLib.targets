@@ -1,0 +1,13 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<VersionPrefix>0.0.1</VersionPrefix>
+		<LangVersion>latest</LangVersion>
+		<Authors>NioZero</Authors>
+		<PackageTags>trovo;dotnet</PackageTags>
+		<PackageProjectUrl>https://github.com/TrovoLib/TrovoLib</PackageProjectUrl>
+		<PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>git://github.com/TrovoLib/TrovoLib.git</RepositoryUrl>
+		<TargetFrameworks>net6.0;net5.0;netcoreapp3.1;netstandard2.1;net48</TargetFrameworks>
+	</PropertyGroup>
+</Project>

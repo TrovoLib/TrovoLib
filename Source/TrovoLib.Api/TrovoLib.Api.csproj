@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-  </PropertyGroup>
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../TrovoLib.targets" />
+	<ItemGroup>
+	  <ProjectReference Include="..\TrovoLib.Core\TrovoLib.Core.csproj" />
+	  <ProjectReference Include="..\TrovoLib.Entities\TrovoLib.Entities.csproj" />
+	</ItemGroup>
 </Project>

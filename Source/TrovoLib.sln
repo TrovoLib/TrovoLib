@@ -5,11 +5,20 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrovoLib.Api", "TrovoLib.Api\TrovoLib.Api.csproj", "{75CBC509-9B6B-474E-979D-4A4CCA078323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrovoLib.Entities", "TrovoLib.Entities\TrovoLib.Entities.csproj", "{26E3C14E-E984-4E81-8E30-27C397B638E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrovoLib.Entities", "TrovoLib.Entities\TrovoLib.Entities.csproj", "{26E3C14E-E984-4E81-8E30-27C397B638E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrovoLib.Core", "TrovoLib.Core\TrovoLib.Core.csproj", "{09B6428F-B80A-4CF2-9EAF-B7A600A50CD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrovoLib.Core", "TrovoLib.Core\TrovoLib.Core.csproj", "{09B6428F-B80A-4CF2-9EAF-B7A600A50CD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrovoLib.UnitTests", "TrovoLib.UnitTests\TrovoLib.UnitTests.csproj", "{BD578725-B686-4C47-9A57-AB63F54573D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrovoLib.UnitTests", "TrovoLib.UnitTests\TrovoLib.UnitTests.csproj", "{BD578725-B686-4C47-9A57-AB63F54573D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Resources", "0 Resources", "{54FFC3D5-F537-4835-A951-5A59DE2F32A3}"
+	ProjectSection(SolutionItems) = preProject
+		TrovoLib.targets = TrovoLib.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{62820ECF-48DF-4ACD-9087-CFF7C2308112}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Core", "1 Core", "{947411AF-3B41-45E0-B15F-A3528C0C2DD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +45,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26E3C14E-E984-4E81-8E30-27C397B638E6} = {947411AF-3B41-45E0-B15F-A3528C0C2DD1}
+		{09B6428F-B80A-4CF2-9EAF-B7A600A50CD8} = {947411AF-3B41-45E0-B15F-A3528C0C2DD1}
+		{BD578725-B686-4C47-9A57-AB63F54573D7} = {62820ECF-48DF-4ACD-9087-CFF7C2308112}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D79F0888-9C9E-4C8D-B33F-36FDEB6664BE}

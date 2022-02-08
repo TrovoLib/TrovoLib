@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TrovoLib.Core
 {
-    public class ApiClient
+    public class ApiClient : IDisposable
     {
         private readonly HttpClient Http;
 
@@ -14,7 +15,7 @@ namespace TrovoLib.Core
             Http = new HttpClient();
         }
 
-        public async Task<string> ApiRequest(string url, string method, string clientId, string body)
+        public async Task<Tr> ApiRequest<Tr, Tb>(string url, string method, string clientId, Tb? body = null) where Tb : struct
         {
             var request = new HttpRequestMessage
             {
@@ -28,15 +29,24 @@ namespace TrovoLib.Core
             }
 
             if (body != null)
-                request.Content = new StringContent(body, Encoding.UTF8, "application/json");
-
-            var response = await Http.SendAsync(request);
-            if (response.IsSuccessStatusCode)
             {
-                return await response.Content.ReadAsStringAsync();
+                var json = JsonConvert.SerializeObject(body);
+
+                request.Content = new StringContent(json, Encoding.UTF8, "application/json");
             }
 
-            return null;
+            var response = await Http.SendAsync(request);
+
+            response.EnsureSuccessStatusCode();
+
+            var jsResponse = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<Tr>(jsResponse);
+        }
+
+        public void Dispose()
+        {
+            Http.Dispose();
         }
     }
 }
